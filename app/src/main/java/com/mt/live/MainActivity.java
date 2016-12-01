@@ -9,5 +9,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        LiveViewFragment mLiveViewF = new LiveViewFragment();
+        getSupportFragmentManager().beginTransaction().add(R.id.flmain,mLiveViewF).commit();
+
     }
 }
